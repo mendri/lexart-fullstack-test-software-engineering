@@ -77,3 +77,7 @@ e basta rodar o app.py
 ```
 
 Com isso em alguma porta do seu localhost um backend Flask começará a rodar.
+
+## Teste a Aplicação
+
+Acesse o [Chatbot Aqui](https://youtu.be/a37BL0stIuM?si=6JeirlLovFqDU4dT) e veja funcionando normalmente
