@@ -80,4 +80,4 @@ Com isso em alguma porta do seu localhost um backend Flask começará a rodar.
 
 ## Teste a Aplicação
 
-Acesse o [Chatbot Aqui](https://youtu.be/a37BL0stIuM?si=6JeirlLovFqDU4dT) e o veja funcionando normalmente
+Acesse o [Chatbot Aqui](https://lexart-fullstack-test-software-engineering-frontend-mendri.vercel.app/) e o veja funcionando normalmente
