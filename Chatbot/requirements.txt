@@ -5,3 +5,4 @@ torchvision
 nltk
 pymongo[srv]
 python-dotenv
+gunicorn
