@@ -1,0 +1,16 @@
+@keyframes intro {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.chatbot-message {
+  animation-name: intro;
+  animation-duration: 1.5s;
+  max-width: 75%;
+}
+
+.user-message {
+  animation-name: intro;
+  animation-duration: 0.5s;
+  max-width: 75%;
+}
