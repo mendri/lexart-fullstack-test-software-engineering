@@ -1,0 +1,7 @@
+Flask
+flask-cors
+torch
+torchvision
+nltk
+pymongo[srv]
+python-dotenv

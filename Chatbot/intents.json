@@ -1,0 +1,72 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Goodbye",
+        "Good",
+        "I want"
+      ],
+      "responses": [
+        {
+          "response_type": "initiate_chat",
+          "answer": "Starting chat, send your username and password...",
+          "started": true,
+          "logged": false
+        }
+      ]
+    },
+    {
+      "tag": "loan",
+      "patterns": [
+        "loan",
+        "How does a loan work?",
+        "I'm interested in getting a loan",
+        "What are the different types of loans available?",
+        "I want to do a loan "
+      ],
+      "responses": [
+        {
+          "answer": "Here are some topics you might be interested in.",
+          "loan_helpers": [
+            {
+                "button_text": "Do you want to apply for a loan?",
+                "relevant_information": "Choose Loan Type: Select personal, business, or others. Fill Form: Complete our secure online form with your details. Upload Docs: Attach ID, income proof, and collateral info. Review: We assess your application. Get Offer: If approved, we'll share terms. Accept: Agree electronically.",
+                "reference_link": ""
+            },
+            {
+                "button_text": "Loan conditions",
+                "relevant_information": "Interest Rates: Learn about our competitive rates. Repayment Terms: Explore flexible repayment options. Collateral: Understand any assets required.",
+                "reference_link": ""
+            },
+            {
+                "button_text": "Help",
+                "relevant_information": "FAQs: Find quick answers to common questions. Contact Us: Reach our support team for personalized help. Chatbot Assistance: Get instant help from our AI assistant.",
+                "reference_link": ""
+            }
+          ],
+          "response_type": "chatbot_loan_answer",
+          "started": true,
+          "logged": true
+        }
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you Later"
+      ],
+      "responses": [
+        {
+          "response_type": "closing_chat",
+          "answer": "Closing and Saving chat...",
+          "started": false,
+          "logged": true
+        }
+      ]
+    }
+  ]
+}
