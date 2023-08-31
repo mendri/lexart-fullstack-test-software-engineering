@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, KeyboardEvent } from "react"
 import ChatBotInstance from "./axios/ChatBotInstance"
 import IMessage from "./interfaces/IMessage"
 import Message from "./components/Message"
+import DeployHookInstance from "./axios/DeployHookInstace"
 
 function App() {
   const [inputMessage, setInputMessage] = useState("")
@@ -42,19 +43,23 @@ function App() {
   }
 
   async function handleClick() {
-    const { data } = await ChatBotInstance.post("/predict", { "message": inputMessage, "started": isStarted })
+    try {
+      const { data } = await ChatBotInstance.post("/predict", { "message": inputMessage, "started": isStarted })
 
-    if (!data.started && data.logged) {
-      await handleCloseChat()
+      if (!data.started && data.logged) {
+        await handleCloseChat()
+      }
+  
+      setIsStarted(data.started)
+      setIsLogged(data.logged)
+      const userMessage = { "action": "user_message", "message": inputMessage }
+      const chatMessage = { "action": data.response_type, "message": data.answer, ...data } 
+        
+      setMessageHistory([...messageHistory, userMessage, chatMessage])
+      setInputMessage("")
+    } catch(e) {
+      await DeployHookInstance.get("/")
     }
-
-    setIsStarted(data.started)
-    setIsLogged(data.logged)
-    const userMessage = { "action": "user_message", "message": inputMessage }
-    const chatMessage = { "action": data.response_type, "message": data.answer, ...data } 
-      
-    setMessageHistory([...messageHistory, userMessage, chatMessage])
-    setInputMessage("")
   }
 
   return (
