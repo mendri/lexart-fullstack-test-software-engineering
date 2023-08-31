@@ -6,6 +6,12 @@ Este repositório contém a implementação de um projeto de desenvolvimento com
 
  - [Base do meu Chatbot](https://youtu.be/a37BL0stIuM?si=6JeirlLovFqDU4dT)
 
+
+## Teste a Aplicação
+
+Acesse o [Chatbot Aqui](https://lexart-fullstack-test-software-engineering-frontend-mendri.vercel.app/) e o veja funcionando normalmente
+
+O deploy do backend foi feito no site Render.com, portanto após ficar um tempo inativo a aplicação é desligada, e demora um tempinho para ligar quando é acessada de novo.
 ## Instalação do Chatbot
 
 - Primeiro entre na pasta do Chatbot (que esta na raiz)
@@ -77,7 +83,3 @@ e basta rodar o app.py
 ```
 
 Com isso em alguma porta do seu localhost um backend Flask começará a rodar.
-
-## Teste a Aplicação
-
-Acesse o [Chatbot Aqui](https://lexart-fullstack-test-software-engineering-frontend-mendri.vercel.app/) e o veja funcionando normalmente
