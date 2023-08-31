@@ -83,3 +83,20 @@ e basta rodar o app.py
 ```
 
 Com isso em alguma porta do seu localhost um backend Flask começará a rodar.
+
+## Possíveis Melhorias
+
+
+Dado o prazo e a inexperiência com chatbot, eu tenho uma lista de coisas que melhorar, caso fizesse o desafio de novo.
+
+
+- TDD, não fiz nenhum teste nessa aplicação, muito por achar que se fizesse não conseguiria fazer a tempo, mas preciso praticar essa metodologia.
+
+
+- Redux ou ContextAPI, deveria ter pensado um pouco e no início ter escolhido e aplicado uma forma de gerenciamento de estado.
+
+
+- O chatbot em si, como foi minha primeira experiência e etc... não estou muito contente com o resultado do chatbot em si, então estudarei um pouco sobre NLP e Deep Learning.
+
+
+- Também caprichar mais no frontend, dava para ter deixado mais bonito.
