@@ -1,7 +1,7 @@
 
 # Fullstack Test Software Engineering (Lexart 2023)
 
-Este repositório contém a implementação de um projeto de desenvolvimento completo para a avaliação da Lexart 2023. O projeto consiste em dois componentes principais: um web chatbot interativo e uma simulação de um cyclotron, incluindo algoritmos para acelerar diferentes partículas.
+Este repositório contém a implementação de um projeto para a avaliação da Lexart 2023. O projeto consiste em dois componentes principais: um web chatbot interativo e uma simulação de um cyclotron, incluindo algoritmos para acelerar diferentes partículas.
 ## Referências
 
  - [Base do meu Chatbot](https://youtu.be/a37BL0stIuM?si=6JeirlLovFqDU4dT)
